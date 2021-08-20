@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0427EE5A26CF89A6009C840D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427EE5926CF89A6009C840D /* Extensions.swift */; };
 		04DFD9F726CF788600EE03F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFD9F626CF788600EE03F7 /* AppDelegate.swift */; };
 		04DFD9F926CF788600EE03F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFD9F826CF788600EE03F7 /* SceneDelegate.swift */; };
 		04DFD9FB26CF788600EE03F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFD9FA26CF788600EE03F7 /* ViewController.swift */; };
 		04DFD9FE26CF788600EE03F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DFD9FC26CF788600EE03F7 /* Main.storyboard */; };
 		04DFDA0026CF788700EE03F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DFD9FF26CF788700EE03F7 /* Assets.xcassets */; };
 		04DFDA0326CF788700EE03F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DFDA0126CF788700EE03F7 /* LaunchScreen.storyboard */; };
+		04DFDA0D26CF7A9500EE03F7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFDA0C26CF7A9500EE03F7 /* APICaller.swift */; };
+		04DFDA1026CF7E5B00EE03F7 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFDA0F26CF7E5B00EE03F7 /* CryptoTableViewCell.swift */; };
+		04DFDA1326CF814B00EE03F7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFDA1226CF814B00EE03F7 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0427EE5926CF89A6009C840D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		04DFD9F326CF788600EE03F7 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DFD9F626CF788600EE03F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DFD9F826CF788600EE03F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		04DFD9FF26CF788700EE03F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DFDA0226CF788700EE03F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04DFDA0426CF788700EE03F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DFDA0C26CF7A9500EE03F7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		04DFDA0F26CF7E5B00EE03F7 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		04DFDA1226CF814B00EE03F7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0427EE5826CF8987009C840D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		046E425D26CF853C009C9317 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		046E425E26CF854D009C9317 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04DFDA0C26CF7A9500EE03F7 /* APICaller.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		046E426026CF8564009C9317 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046E426726CF8675009C9317 /* Storyboard */,
+				046E426826CF868A009C9317 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046E426226CF85EA009C9317 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DFD9FA26CF788600EE03F7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046E426526CF85FD009C9317 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DFDA1226CF814B00EE03F7 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046E426726CF8675009C9317 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				04DFD9FC26CF788600EE03F7 /* Main.storyboard */,
+				04DFDA0126CF788700EE03F7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		046E426826CF868A009C9317 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				04DFDA0F26CF7E5B00EE03F7 /* CryptoTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		04DFD9EA26CF788600EE03F7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +130,15 @@
 			children = (
 				04DFD9F626CF788600EE03F7 /* AppDelegate.swift */,
 				04DFD9F826CF788600EE03F7 /* SceneDelegate.swift */,
-				04DFD9FA26CF788600EE03F7 /* ViewController.swift */,
-				04DFD9FC26CF788600EE03F7 /* Main.storyboard */,
 				04DFD9FF26CF788700EE03F7 /* Assets.xcassets */,
-				04DFDA0126CF788700EE03F7 /* LaunchScreen.storyboard */,
 				04DFDA0426CF788700EE03F7 /* Info.plist */,
+				0427EE5926CF89A6009C840D /* Extensions.swift */,
+				0427EE5826CF8987009C840D /* Extensions */,
+				046E426226CF85EA009C9317 /* Controller */,
+				046E425E26CF854D009C9317 /* Manager */,
+				046E426526CF85FD009C9317 /* Model */,
+				046E426026CF8564009C9317 /* View */,
+				046E425D26CF853C009C9317 /* ViewModel */,
 			);
 			path = "Crypto Tracker";
 			sourceTree = "<group>";
@@ -139,7 +215,11 @@
 			files = (
 				04DFD9FB26CF788600EE03F7 /* ViewController.swift in Sources */,
 				04DFD9F726CF788600EE03F7 /* AppDelegate.swift in Sources */,
+				04DFDA1326CF814B00EE03F7 /* Models.swift in Sources */,
 				04DFD9F926CF788600EE03F7 /* SceneDelegate.swift in Sources */,
+				04DFDA1026CF7E5B00EE03F7 /* CryptoTableViewCell.swift in Sources */,
+				04DFDA0D26CF7A9500EE03F7 /* APICaller.swift in Sources */,
+				0427EE5A26CF89A6009C840D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
